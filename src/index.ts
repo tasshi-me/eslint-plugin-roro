@@ -14,7 +14,7 @@ const base = {
 
 const configs = {
   recommended: {
-    files: ["**/*.{ts,cts,mts,jsx,tsx}"],
+    files: ["**/*.{ts,cts,mts,tsx}"],
     plugins: {
       [name]: base,
     },
