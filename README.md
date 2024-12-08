@@ -4,7 +4,7 @@
 [![CI](https://github.com/tasshi-me/eslint-plugin-roro/actions/workflows/ci.yml/badge.svg)](https://github.com/tasshi-me/eslint-plugin-roro/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> This plugin provide a rule to enforce the [RORO](https://medium.com/free-code-camp/elegant-patterns-in-modern-javascript-roro-be01e7669cbd) (An ESLint plugin to follow the RORO (Receive an Object, Return an Object) pattern.)
+> This plugin provide rules to enforce the [RORO](https://medium.com/free-code-camp/elegant-patterns-in-modern-javascript-roro-be01e7669cbd) (Receive an Object, Return an Object) pattern.
 
 ## Usage
 
@@ -12,50 +12,19 @@
 npm i -D eslint-plugin-roro
 ```
 
+```javascript
+// eslint.config.mjs
+import eslintPluginRORO from "eslint-plugin-roro";
+
+export default [eslintPluginRORO.configs.recommended];
+```
+
 ## Rules
 
-- [receive-object](#receive-object)
-- [return-object](#return-object)
-
-### receive-object
-
-Enforce functions to receive only a single object.
-
-#### ❌Incorrect
-
-```typescript
-const func = (param1: string, param2: string) => {
-  /* ... */
-};
-```
-
-#### ✅Correct
-
-```typescript
-const func = (params: { param1: string; param2: string }) => {
-  /* ... */
-};
-```
-
-### return-object
-
-Enforce functions to return an object.
-
-#### ❌Incorrect
-
-```typescript
-const func = (): string => {
-  /* ... */
-};
-```
-
-#### ✅Correct
-
-```typescript
-const func = (): { value: string } => {
-  /* ... */
-};
-```
+| Name                                          | Description                                        |
+| --------------------------------------------- | -------------------------------------------------- |
+| [receive-object](./docs/rules/receive-object) | Enforce functions to receive only a single object. |
+| [return-object](./docs/rules/return-object)   | Enforce functions to return an object.             |
 
 ## License
 

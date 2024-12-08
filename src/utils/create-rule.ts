@@ -8,5 +8,6 @@ export interface PluginDocs {
 }
 
 export const createRule = ruleCreator<PluginDocs>(
-  (name) => `https://github.com/tasshi-me/eslint-plugin-roro/#${name}`,
+  (name) =>
+    `https://github.com/tasshi-me/eslint-plugin-roro/tree/main/eslint-plugin-example-typed-linting/docs/${name}.md`,
 );
