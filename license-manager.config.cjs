@@ -20,7 +20,14 @@ const config = createConfig({
       "BlueOak-1.0.0",
       "Unlicense",
     ],
-    allowPackages: [],
+  },
+  // TODO: Remove this override after https://github.com/cybozu/license-manager/pull/11 merged.
+  overrideLicense: (dep) => {
+    // https://www.npmjs.com/package/memorystream
+    if (dep.name === "memorystream") {
+      return "MIT";
+    }
+    return undefined;
   },
 });
 
