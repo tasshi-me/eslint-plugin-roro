@@ -2,23 +2,57 @@
 
 > This plugin provide a rule to enforce the [RORO](https://medium.com/free-code-camp/elegant-patterns-in-modern-javascript-roro-be01e7669cbd) (An ESLint plugin to follow the RORO (Receive an Object, Return an Object) pattern.)
 
+## Usage
+
+```shell
+npm i -D eslint-plugin-roro
+```
+
 ## Rules
 
-- use-roro
+- [receive-object](#receive-object)
+- [return-object](#return-object)
 
-### use-roro
+### receive-object
+
+Enforce functions to receive only a single object.
+
+#### ❌Incorrect
 
 ```typescript
-// Error
-
-const func = (param1, param2): string => {
+const func = (param1: string, param2: string) => {
   /* ... */
 };
 ```
 
+#### ✅Correct
+
 ```typescript
-// OK
-const func = (params: { param1; param2 }): { resp: string } => {
+const func = (params: { param1: string; param2: string }) => {
   /* ... */
 };
 ```
+
+### return-object
+
+Enforce functions to return an object.
+
+#### ❌Incorrect
+
+```typescript
+const func = (): string => {
+  /* ... */
+};
+```
+
+#### ✅Correct
+
+```typescript
+const func = (): { value: string } => {
+  /* ... */
+};
+```
+
+## License
+
+[MIT](./LICENSE)
