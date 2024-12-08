@@ -42,7 +42,7 @@
     "url": "https://github.com/tasshi-me/eslint-plugin-roro/issues"
   },
   "homepage": "https://github.com/tasshi-me/eslint-plugin-roro#readme",
-  "author": "tasshi <tasshi.me@gmail.com>",
+  "author": "tasshi (Masaharu Tashiro) <tasshi.me@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/utils": "^8.17.0"
