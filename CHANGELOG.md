@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.2...v0.0.3) (2024-12-08)
+
+
+### Documentation
+
+* fix links to rules pages ([9cb021f](https://github.com/tasshi-me/eslint-plugin-roro/commit/9cb021fc6ccce1f18e5f723ccc051d10fb139106))
+
 ## [0.0.2](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.1...v0.0.2) (2024-12-08)
 
 

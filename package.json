@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-roro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An ESLint plugin to follow the RORO (Receive an Object, Return an Object) pattern.",
   "type": "module",
   "main": "lib/index.js",
