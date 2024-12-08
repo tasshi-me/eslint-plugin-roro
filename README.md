@@ -5,3 +5,20 @@
 ## Rules
 
 - use-roro
+
+### use-roro
+
+```typescript
+// Error
+
+const func = (param1, param2): string => {
+  /* ... */
+};
+```
+
+```typescript
+// OK
+const func = (params: { param1; param2 }): { resp: string } => {
+  /* ... */
+};
+```
