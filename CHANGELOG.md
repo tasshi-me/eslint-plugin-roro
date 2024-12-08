@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.2](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.1...v0.0.2) (2024-12-08)
+
+
+### Bug Fixes
+
+* plugin structure ([19ca6ff](https://github.com/tasshi-me/eslint-plugin-roro/commit/19ca6ffb7752d595a0bbde379bca55a384e4f9a3))
+
+
+### Documentation
+
+* create rules pages ([5340ae7](https://github.com/tasshi-me/eslint-plugin-roro/commit/5340ae75b77f8f47a96fae9dc7410e1f00f7e6c2))
+
 ## 0.0.1 (2024-12-08)
 
 
