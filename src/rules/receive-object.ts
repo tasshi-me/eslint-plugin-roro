@@ -37,6 +37,7 @@ export const rule = createRule<[], MessageIds>({
           node: node,
           messageId: "shouldReceiveSingleObject",
         });
+        return;
       }
 
       // Check if the first parameter is an object
