@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.4](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.3...v0.0.4) (2024-12-08)
+
+
+### Bug Fixes
+
+* duplicated reports ([3c72f42](https://github.com/tasshi-me/eslint-plugin-roro/commit/3c72f42a4b2647eedc1c53dd1f991c2ef04f0e00))
+* fix target files ([ad2a2d5](https://github.com/tasshi-me/eslint-plugin-roro/commit/ad2a2d5e6bcfa52dd765f234f98665ca2cc16525))
+* unify errors for the `receive-object` rule ([0436e9b](https://github.com/tasshi-me/eslint-plugin-roro/commit/0436e9ba862f83e84f9702020d33905cfdc65957))
+
 ## [0.0.3](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.2...v0.0.3) (2024-12-08)
 
 
