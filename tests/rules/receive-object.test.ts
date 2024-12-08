@@ -47,7 +47,7 @@ ruleTester.run("receive-object", rule, {
       // invalid tests must always specify the expected errors
       errors: [
         {
-          messageId: "shouldReceiveObject",
+          messageId: "shouldReceiveSingleObject",
           // If applicable - it's recommended that you also assert the data in
           // addition to the messageId so that you can ensure the correct message
           // is generated
@@ -62,7 +62,7 @@ ruleTester.run("receive-object", rule, {
       // invalid tests must always specify the expected errors
       errors: [
         {
-          messageId: "shouldReceiveSingleParameter",
+          messageId: "shouldReceiveSingleObject",
         },
       ],
     },
@@ -79,7 +79,7 @@ ruleTester.run("receive-object", rule, {
       },
       errors: [
         {
-          messageId: "shouldReceiveObject",
+          messageId: "shouldReceiveSingleObject",
         },
       ],
     },

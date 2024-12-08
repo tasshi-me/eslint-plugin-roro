@@ -2,7 +2,7 @@ import { AST_NODE_TYPES, TSESTree } from "@typescript-eslint/utils";
 import { createRule } from "../utils/create-rule.js";
 import { isObjectLikeKeyword } from "../utils/typecheck.js";
 
-type MessageIds = "shouldReceiveObject" | "shouldReceiveSingleParameter";
+type MessageIds = "shouldReceiveSingleObject";
 
 export const rule = createRule<[], MessageIds>({
   name: "receive-object",
@@ -14,8 +14,7 @@ export const rule = createRule<[], MessageIds>({
       requiresTypeChecking: true,
     },
     messages: {
-      shouldReceiveObject: "Function must receive only an object",
-      shouldReceiveSingleParameter: "Function must receive only a parameter",
+      shouldReceiveSingleObject: "Function must receive only a single object",
     },
     schema: [],
   },
@@ -36,7 +35,7 @@ export const rule = createRule<[], MessageIds>({
       if (node.params.length > 1) {
         context.report({
           node: node,
-          messageId: "shouldReceiveSingleParameter",
+          messageId: "shouldReceiveSingleObject",
         });
       }
 
@@ -53,7 +52,7 @@ export const rule = createRule<[], MessageIds>({
         return;
       }
       if (!isObjectLikeKeyword(firstParamTypeAnnotation)) {
-        context.report({ node: node, messageId: "shouldReceiveObject" });
+        context.report({ node: node, messageId: "shouldReceiveSingleObject" });
       }
 
       // TODO: Forbit implicit any
