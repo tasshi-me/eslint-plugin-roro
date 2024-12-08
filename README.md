@@ -21,11 +21,11 @@ export default [eslintPluginRORO.configs.recommended];
 
 ## Rules
 
-| Name                                          | Description                                        |
-| --------------------------------------------- | -------------------------------------------------- |
-| [receive-object](./docs/rules/receive-object) | Enforce functions to receive only a single object. |
-| [return-object](./docs/rules/return-object)   | Enforce functions to return an object.             |
+| Name                                           | Description                                        |
+| ---------------------------------------------- | -------------------------------------------------- |
+| [receive-object](docs/rules/receive-object.md) | Enforce functions to receive only a single object. |
+| [return-object](docs/rules/return-object.md)   | Enforce functions to return an object.             |
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](LICENSE)
