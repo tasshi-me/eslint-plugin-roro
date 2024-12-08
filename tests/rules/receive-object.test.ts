@@ -1,5 +1,5 @@
 import { RuleTester } from "@typescript-eslint/rule-tester";
-import rule from "./../../src/rules/receive-object.js";
+import { rule } from "../../src/rules/receive-object.js";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 

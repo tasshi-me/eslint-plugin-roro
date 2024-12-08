@@ -4,12 +4,14 @@ import { isObjectLikeKeyword } from "../utils/typecheck.js";
 
 type MessageIds = "shouldReceiveObject" | "shouldReceiveSingleParameter";
 
-const rule = createRule<[], MessageIds>({
+export const rule = createRule<[], MessageIds>({
   name: "receive-object",
   meta: {
     type: "suggestion",
     docs: {
       description: "Enforce functions to receive only a single object.",
+      recommended: true,
+      requiresTypeChecking: true,
     },
     messages: {
       shouldReceiveObject: "Function must receive only an object",
@@ -64,5 +66,3 @@ const rule = createRule<[], MessageIds>({
     };
   },
 });
-
-export default rule;

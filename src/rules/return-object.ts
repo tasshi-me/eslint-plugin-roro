@@ -4,12 +4,14 @@ import { isObjectLikeKeyword, isObjectLikeType } from "../utils/typecheck.js";
 
 type MessageIds = "shouldReturnObject";
 
-const rule = createRule<[], MessageIds>({
+export const rule = createRule<[], MessageIds>({
   name: "return-object",
   meta: {
     type: "suggestion",
     docs: {
       description: "Enforce functions to return an object.",
+      recommended: true,
+      requiresTypeChecking: true,
     },
     messages: {
       shouldReturnObject: "Function must return an object",
@@ -52,5 +54,3 @@ const rule = createRule<[], MessageIds>({
     };
   },
 });
-
-export default rule;
