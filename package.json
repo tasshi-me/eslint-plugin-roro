@@ -47,6 +47,9 @@
   "dependencies": {
     "@typescript-eslint/utils": "^8.17.0"
   },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
   "devDependencies": {
     "@cybozu/eslint-config": "^24.0.0-beta.0",
     "@cybozu/license-manager": "^1.2.1",
