@@ -1,6 +1,6 @@
 # eslint-plugin-roro
 
-[![npm version](https://badge.fury.io/js/eslint-plugin-roro.svg)](https://badge.fury.io/js/eslint-plugin-roro)
+[![npm version](https://badge.fury.io/js/eslint-plugin-roro.svg?icon=si%3Anpm)](https://badge.fury.io/js/eslint-plugin-roro)
 [![CI](https://github.com/tasshi-me/eslint-plugin-roro/actions/workflows/ci.yml/badge.svg)](https://github.com/tasshi-me/eslint-plugin-roro/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
