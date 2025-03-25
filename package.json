@@ -54,7 +54,7 @@
     "@cybozu/eslint-config": "^24.0.0",
     "@cybozu/license-manager": "^1.2.1",
     "@types/node": "^22.13.13",
-    "@typescript-eslint/rule-tester": "^8.27.0",
+    "@typescript-eslint/rule-tester": "^8.28.0",
     "eslint": "^9.23.0",
     "globals": "^15.15.0",
     "npm-run-all": "^4.1.5",
