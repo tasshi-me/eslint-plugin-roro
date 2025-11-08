@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.4...v0.0.5) (2025-11-08)
+
+
+### Documentation
+
+* update status badges ([d1daac9](https://github.com/tasshi-me/eslint-plugin-roro/commit/d1daac9e009e86f0a4c88a5b43482df974c32aa0))
+
 ## [0.0.4](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.3...v0.0.4) (2024-12-08)
 
 
