@@ -1,3 +1,6 @@
+# WARNING: When you rename a workflow filename, remember to update the Trusted Publishing settings as well.
+# https://www.npmjs.com/package/eslint-plugin-roro/access
+# ref. https://docs.npmjs.com/trusted-publishers
 name: Release
 on:
   push:
@@ -22,7 +25,7 @@ jobs:
     name: Publish
     permissions:
       contents: read
-      id-token: write
+      id-token: write # Required for OIDC authn and npm provenance
     runs-on: ubuntu-latest
     needs: release
     if: ${{ needs.release.outputs.release_created }}
@@ -32,9 +35,11 @@ jobs:
         with:
           node-version: "lts/*"
           registry-url: "https://registry.npmjs.org"
+      # Ensure npm 11.5.1 or later is installed
+      # ref. https://docs.npmjs.com/trusted-publishers#github-actions-configuration
+      - run: npm install -g npm@latest
       - run: npm ci
       - run: npm run build
       - run: npm publish --provenance --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_CONFIG_PROVENANCE: true
