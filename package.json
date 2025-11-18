@@ -45,7 +45,7 @@
   "author": "tasshi (Masaharu Tashiro) <tasshi.me@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/utils": "^8.46.2"
+    "@typescript-eslint/utils": "^8.46.3"
   },
   "peerDependencies": {
     "eslint": ">=9.39.0"
