@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.5...v0.0.6) (2026-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/utils to ^8.64.0 ([#426](https://github.com/tasshi-me/eslint-plugin-roro/issues/426)) ([e75bd4f](https://github.com/tasshi-me/eslint-plugin-roro/commit/e75bd4f35317d3e1baa458e52952cfbd98b1e39c))
+* **deps:** update dependency @typescript-eslint/utils to ^8.65.0 ([#428](https://github.com/tasshi-me/eslint-plugin-roro/issues/428)) ([0430e3b](https://github.com/tasshi-me/eslint-plugin-roro/commit/0430e3bc8365a1c73dd191494cd127ac772c6776))
+
 ## [0.0.5](https://github.com/tasshi-me/eslint-plugin-roro/compare/v0.0.4...v0.0.5) (2025-11-08)
 
 
